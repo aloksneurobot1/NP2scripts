@@ -1,0 +1,27 @@
+# ------------------
+# FILE PATHS
+# ------------------
+data_directory: 'path/to/your/raw/spikeglx/data'
+raw_recording_file: 'path/to/your/raw/spikeglx/data/recording.bin'
+processed_directory: 'path/to/your/processed_data'
+kilosort_output_directory: 'path/to/your/kilosort/output'
+channel_map_file: 'path/to/your/channel_map.csv'
+behavioral_data_file: 'path/to/your/behavioral_data.csv'
+
+# ------------------
+# ANALYSIS PARAMETERS
+# ------------------
+# Pre-processing
+lfp_sampling_rate: 1250 # Hz
+lfp_filter_band: [0.5, 500] # Hz
+
+# CSD
+conductivity: 0.3 # S/m
+inter_electrode_dist: 20 # um
+
+# Spectral Bands
+theta_band: [6, 12]
+slow_gamma_band: [25, 50]
+mid_gamma_band: [60, 90]
+fast_gamma_band: [100, 140]
+ripple_band: [150, 250]
