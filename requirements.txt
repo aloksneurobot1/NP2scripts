@@ -1,0 +1,4 @@
+brian2
+numpy
+scipy
+matplotlib
